@@ -1,0 +1,121 @@
+Determine the time and space complexities for each of the following functions. If you're
+not sure what these functions do, copy and paste them into the console and experiment
+with different inputs!
+
+
+1 ).
+
+	function logUpTo(n) {
+	 for (var i = 1; i <= n; i++) {
+	 console.log(i);
+	 }
+	}
+
+
+    Time Complexity
+    ***************
+
+    The time complexity of the above program is O(n) because the runtime scales in proportion to the input
+    size. 	
+
+    Space Complexity
+    *****************
+
+    The space complexity of the program is O(n) becasue loop iterates n time and logs the i,  the iteartion depends on n and it has the O(n) time complexity.
+
+
+2)
+    function logAtMost10(n) {
+	 for (var i = 1; i <= Math.min(n, 10); i++) {
+	 console.log(i);
+	 }
+	}    
+
+	Time Complexity
+    ***************
+
+    The time complexity of the above program is O(1) because the runtime of the 
+    loop is not proportional to n.It will run maximum of 10 times.
+
+    Space Complexity
+    *****************
+
+    As the time complexity of the program O(1) ,the space complexity is also O(1) because it will logs i
+    maximum of 10 times.
+
+
+
+3)
+	function logAtLeast10(n) {
+	 for (var i = 1; i <= Math.max(n, 10); i++) {
+	 console.log(i);
+	 }
+	} 
+
+	Time Complexity
+    ***************
+
+    The time complexity of the program is O(n) because the runtime of the 
+    loop is proportional to n and the iterates minimum 10 times. n should be n>=10. 
+
+    Space complexity
+    ****************
+
+    Space complexity is O(n) because loop iterates up to n and the space will increase as the value of n.
+
+
+4)
+
+	function onlyElementsAtEvenIndex(array) {
+	 var newArray = Array(Math.ceil(array.length / 2));
+	 for (var i = 0; i < array.length; i++) {
+	 if (i % 2 === 0) {
+	 newArray[i / 2] = array[i];
+	 }
+	 }
+	 return newArray;
+	}    
+
+
+	Time Complexity
+    ***************
+
+    The time complexity of the program is O(1) because the runtime of the 
+    loop is proportional to n.
+
+    Space complexity
+    ****************
+
+    This function takes the array and divides its length and iterates the loop till the length of an array and assign element value to  newArray and space will increase as the 
+    length of an array is increased which is n. So the space complexity is O(n) . 
+
+
+5)
+
+	function subtotals(array) {
+	 var subtotalArray = Array(array.length);
+	 for (var i = 0; i < array.length; i++) {
+		 var subtotal = 0;
+		 for (var j = 0; j <= i; j++) {
+			 subtotal += array[j];
+		 }
+	     subtotalArray[i] = subtotal;SS
+	 }
+	 return subtotalArray;
+	}    
+
+	Time Complexity
+    ***************
+
+    The time complexity of the program is O(n) because the runtime of the 
+    loop is proportional to n.
+
+    Space complexity
+    ****************
+
+	The space complexity of the program is O(n) because it returns the subtotalArray which is length of the input array.which is unknown.
+
+
+
+
+
