@@ -160,4 +160,4 @@
 
 	10. O(n + n^(1/2) + n^2 + n * log(n)^10)
 
-	Ans. O(log(n^10)
+	Ans. O(log(n^10))
